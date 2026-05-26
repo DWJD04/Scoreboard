@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey Scoreboard Pro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="scoreboard">
+    <h1 class="title">Hockey Scoreboard</h1>
+    
+    <div class="team-container">
+        
+        <div class="homecard">
+            <h2 class="score">0</h2>
+            <h3 class="teamlabel">Home Team</h3>
+            <div class="buttongroup">
+                <button class="scorebutton" id="home-increase">+</button>
+                <button class="scorebutton" id="home-decrease">-</button>
+            </div>
+        </div>
+
+        <div class="awaycard">
+            <h2 class="score">0</h2>
+            <h3 class="teamlabel">Away Team</h3>
+            <div class="buttongroup">
+                <button class="scorebutton" id="away-increase">+</button>
+                <button class="scorebutton" id="away-decrease">-</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="timercard">
+        <h2 class="timer">20:00</h2>
+        <div class="buttongroup">
+            <button class="timerbutton" id="start-timer">Start</button>
+            <button class="timerbutton" id="pause-timer">Pause</button>
+            <button class="timerbutton" id="reset-timer">Reset</button>
+        </div>
+    </div>
+
+    <div class="save-actions">
+        <button class="timerbutton" id="save-game">Save Game</button>
+        <button class="timerbutton" id="clear-table">Clear Table</button>
+    </div>
+
+    <div class="history-container">
+        <table id="history-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Home Team</th>
+                    <th>Away Team</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
